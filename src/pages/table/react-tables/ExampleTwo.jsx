@@ -12,7 +12,7 @@ import {
 } from "react-table";
 import GlobalFilter from "./GlobalFilter";
 import { DateRangePicker } from "react-date-range";
-import { Calendar } from "react-feather";
+import { Calendar, Plus } from "react-feather";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { addDays } from "date-fns";
@@ -83,11 +83,15 @@ const COLUMNS = [
         <span className="block w-full">
           <span
             className={` inline-block px-3 min-w-[90px] text-center mx-auto py-1 rounded-[999px] bg-opacity-25 ${
-              row?.cell?.value === "paid"
+              row?.cell?.value === "Completed"
                 ? "text-success-500 bg-success-600"
                 : ""
             }
-            ${row?.cell?.value === "due" ? "text-yellow-500 bg-yellow-500" : ""}
+            ${
+              row?.cell?.value === "Pending"
+                ? "text-yellow-500 bg-yellow-500"
+                : ""
+            }
             ${
               row?.cell?.value === "cancled"
                 ? "text-danger-500 bg-danger-500"
@@ -170,7 +174,9 @@ const ExampleTwo = ({ title = "Transaction" }) => {
                   height={"35px"}
                   width={"30px"}
                   class="mx-1"
-                />
+                >
+                  <Plus />
+                </Calendar>
               </div>
               {showCalendar && (
                 <div className="absolute top-12 right-0 z-10">

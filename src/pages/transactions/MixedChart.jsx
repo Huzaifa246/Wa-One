@@ -8,17 +8,17 @@ const MixedChart = () => {
   const series = [
     {
       type: "column",
-      name: "Sent Amount",
+      name: "Transactions Out",
       data: [30, 40, 50, 60, 30, 80, 90, 100, 110, 120, 130, 140],
     },
     {
       type: "area",
-      name: "Recieved Amount",
+      name: "Transactions In",
       data: [99, 76, 85, 101, 48, 87, 55, 91, 114, 94, 100, 50],
     },
     {
       type: "line",
-      name: "Total Amount",
+      name: "Total Transactions",
       data: [120, 100, 185, 200, 98, 99, 105, 91, 114, 210, 100, 150],
     },
   ];
@@ -127,7 +127,7 @@ const MixedChart = () => {
       },
     },
     title: {
-      text: "Number of Transaction",
+      text: "Number of Transactions",
       align: "left",
       offsetY: 9,
       style: {

@@ -75,62 +75,65 @@ const COLUMNS = [
   {
     Header: "KYC level",
     accessor: "KycStatus",
-    Cell: (row) => {
-      return (
-        <span className="progress-showcase">
-          <span className="progress" style={{ height: "8px" }}>
-            <span
-              className={`progress-bar bg-${row?.cell?.value}`}
-              role="progressbar"
-              style={{
-                width: "30px",
-                color: "white",
-                borderRadius: "15px",
-                padding: "5px",
-              }}
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              {row?.cell?.value}
-            </span>
-          </span>
-        </span>
+    // Cell: (row) => {
+    //   return (
+    //     <span className="progress-showcase">
+    //       <span className="progress" style={{ height: "8px" }}>
+    //         <span
+    //           className={`progress-bar bg-${row?.cell?.value}`}
+    //           role="progressbar"
+    //           style={{
+    //             width: "30px",
+    //             color: "white",
+    //             borderRadius: "15px",
+    //             padding: "5px",
+    //           }}
+    //           aria-valuenow="50"
+    //           aria-valuemin="0"
+    //           aria-valuemax="100"
+    //         >
+    //           {row?.cell?.value}
+    //         </span>
+    //       </span>
+    //     </span>
 
-        /* <div className="progress-showcase">
-              <div className="progress" style={{ height: "8px" }}>
-                <div
-                  className={`progress-bar bg-${item.color}`}
-                  role="progressbar"
-                  style={{ width: `${item.width}` }}
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div> */
-      );
+    //     /* <div className="progress-showcase">
+    //           <div className="progress" style={{ height: "8px" }}>
+    //             <div
+    //               className={`progress-bar bg-${item.color}`}
+    //               role="progressbar"
+    //               style={{ width: `${item.width}` }}
+    //               aria-valuenow="50"
+    //               aria-valuemin="0"
+    //               aria-valuemax="100"
+    //             ></div>
+    //           </div>
+    //         </div> */
+    //   );
+    // },
+    Cell: (row) => {
+      return <span>{row?.cell?.value}</span>;
     },
   },
   {
     Header: "status",
-    accessor: "status",
+    accessor: "UserStatus",
     Cell: (row) => {
       return (
         <span className="block w-full">
           <span
             className={` inline-block px-3 min-w-[90px] text-center mx-auto py-1 rounded-[999px] bg-opacity-25 ${
-              row?.cell?.value === "paid"
+              row?.cell?.value === "Active"
                 ? "text-success-500 bg-success-500"
                 : ""
             }
             ${
-              row?.cell?.value === "due"
-                ? "text-warning-500 bg-warning-500"
+              row?.cell?.value === "OnHold"
+                ? "text-warning-500 bg-yellow-400"
                 : ""
             }
             ${
-              row?.cell?.value === "cancled"
+              row?.cell?.value === "Blocked"
                 ? "text-danger-500 bg-danger-500"
                 : ""
             }

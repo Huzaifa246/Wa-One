@@ -99,7 +99,7 @@ const AreaChartClass = () => {
       },
     },
     title: {
-      text: "Volume of Transaction",
+      text: "Volume of Transactions",
       align: "left",
       offsetY: 9,
       style: {
