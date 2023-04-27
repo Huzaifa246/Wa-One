@@ -82,7 +82,7 @@ const AreaChartClass = () => {
       horizontalAlign: "right",
       fontSize: "10px",
       fontFamily: "Inter",
-      offsetY: -30,
+      offsetY: -10,
       markers: {
         width: 8,
         height: 8,
@@ -119,9 +119,7 @@ const AreaChartClass = () => {
     <>
       <div className="2xl:col-span-6 lg:col-span-7 col-span-12 md:col-span-6">
         <Card>
-          <div>
-            <Chart options={options} series={series} type="area" height={350} />
-          </div>
+          <Chart options={options} series={series} type="area" height={350} />
         </Card>
       </div>
     </>

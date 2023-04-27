@@ -110,7 +110,7 @@ const MixedChart = () => {
       horizontalAlign: "right",
       fontSize: "10px",
       fontFamily: "Inter",
-      offsetY: -30,
+      offsetY: -10,
       markers: {
         width: 8,
         height: 8,
@@ -147,9 +147,7 @@ const MixedChart = () => {
   return (
     <div className="2xl:col-span-6 lg:col-span-7 col-span-12">
       <Card>
-        <div>
-          <Chart options={options} series={series} type="line" height={350} />
-        </div>
+        <Chart options={options} series={series} type="line" height={350} />
       </Card>
     </div>
   );

@@ -8,14 +8,14 @@ import Card from "@/components/ui/Card";
 const transactions = () => {
   return (
     <>
-      <h5 class="my-6">Transaction</h5>
+      <h3 class="my-6">Transaction</h3>
       <Card>
         <div class="flex flex-wrap gap-4 justify-between">
-          <div class="w-full md:w-1/2 lg:w-[49%] p-1">
+          <div class="w-full md:w-1/2 lg:w-[49%] bg-gray-100 p-1">
             {/* <ColChart /> */}
             <MixedChart />
           </div>
-          <div class="w-full md:w-1/2 lg:w-[49%] p-1">
+          <div class="w-full md:w-1/2 lg:w-[49%] bg-gray-100 p-1">
             <AreaChartClass />
           </div>
         </div>
