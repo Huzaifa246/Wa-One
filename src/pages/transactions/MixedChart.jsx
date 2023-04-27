@@ -114,7 +114,7 @@ const MixedChart = () => {
       markers: {
         width: 8,
         height: 8,
-        offsetY: -1,
+        offsetY: 0,
         offsetX: 0,
         radius: 5,
       },
@@ -148,7 +148,7 @@ const MixedChart = () => {
     <div className="2xl:col-span-6 lg:col-span-7 col-span-12">
       <Card>
         {/* <h5 class="my-2">Number of Transactions</h5> */}
-        <div className="legend-ring">
+        <div>
           <Chart options={options} series={series} type="line" height={350} />
         </div>
       </Card>

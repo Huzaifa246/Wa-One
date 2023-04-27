@@ -86,12 +86,12 @@ const AreaChartClass = () => {
       markers: {
         width: 8,
         height: 8,
-        offsetY: -1,
+        offsetY: 1,
         offsetX: 0,
         radius: 5,
       },
       itemMargin: {
-        horizontal: 3,
+        horizontal: 5,
         vertical: 0,
       },
       labels: {
@@ -115,33 +115,11 @@ const AreaChartClass = () => {
       },
     },
   };
-  // legend: {
-  //     show: true,
-  //     position: "top",
-  //     horizontalAlign: "right",
-  //     fontSize: "12px",
-  //     fontFamily: "Inter",
-  //     offsetY: -0, // adjust this value
-  //     markers: {
-  //       width: 8,
-  //       height: 8,
-  //       offsetY: -1,
-  //       offsetX: -5,
-  //       radius: 12,
-  //     },
-  //     labels: {
-  //       colors: isDark ? "#CBD5E1" : "#475569",
-  //     },
-  //     itemMargin: {
-  //       horizontal: 18,
-  //       vertical: 0,
-  //     },
-  //   },
   return (
     <>
       <div className="2xl:col-span-6 lg:col-span-7 col-span-12 md:col-span-6">
         <Card>
-          <div className="legend-ring">
+          <div>
             <Chart options={options} series={series} type="area" height={350} />
           </div>
         </Card>

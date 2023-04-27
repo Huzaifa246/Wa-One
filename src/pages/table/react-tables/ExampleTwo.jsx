@@ -18,13 +18,6 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { addDays } from "date-fns";
 
 const COLUMNS = [
-  // {
-  //   Header: "Id",
-  //   accessor: "id",
-  //   Cell: (row) => {
-  //     return <span>{row?.cell?.value}</span>;
-  //   },
-  // },
   {
     Header: "Name",
     accessor: "customer",
@@ -165,7 +158,12 @@ const ExampleTwo = ({ title = "Transaction" }) => {
             <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
             <div className="relative">
               <div>
-                <Calendar onClick={handleCalendarClick} height={"30px"} />
+                <Calendar
+                  onClick={handleCalendarClick}
+                  height={"35px"}
+                  width={"30px"}
+                  class="mx-1"
+                />
               </div>
               {showCalendar && (
                 <div className="absolute top-12 right-0 z-10">
