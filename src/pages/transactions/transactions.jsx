@@ -11,11 +11,10 @@ const transactions = () => {
       <h3 class="my-6">Transaction</h3>
       <Card>
         <div class="flex flex-wrap gap-4 justify-between">
-          <div class="w-full md:w-1/2 lg:w-[49%] bg-gray-100 p-1">
-            {/* <ColChart /> */}
+          <div class="w-full md:w-1/2 lg:w-[49%]">
             <MixedChart />
           </div>
-          <div class="w-full md:w-1/2 lg:w-[49%] bg-gray-100 p-1">
+          <div class="w-full md:w-1/2 lg:w-[49%]">
             <AreaChartClass />
           </div>
         </div>
