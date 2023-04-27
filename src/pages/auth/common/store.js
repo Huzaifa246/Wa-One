@@ -7,13 +7,13 @@ const initialUsers = () => {
   return item
     ? JSON.parse(item)
     : [
-        {
-          id: uuidv4(),
-          name: "dashcode",
-          email: "dashcode@gmail.com",
-          password: "dashcode",
-        },
-      ];
+      {
+        id: uuidv4(),
+        name: "waOne",
+        email: "waone@gmail.com",
+        password: "waOneAdmin",
+      },
+    ];
 };
 // save users in local storage
 

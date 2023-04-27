@@ -14,15 +14,15 @@ const forgotPass = () => {
         <div className="left-column relative z-[1]">
           <div className="max-w-[520px] pt-20 ltr:pl-20 rtl:pr-20">
             <Link to="/">
-              <img src={isDark ? LogoWhite : Logo} alt="" className="mb-10" />
+              <img
+                src={isDark ? LogoWhite : Logo}
+                alt=""
+                className="mb-5"
+                width={"250px"}
+              />
             </Link>
 
-            <h4>
-              Unlock your Project
-              <span className="text-slate-800 dark:text-slate-400 font-bold">
-                performance
-              </span>
-            </h4>
+            <h4>Unlock your Wa-One</h4>
           </div>
           <div className="absolute left-0 bottom-[-130px] h-full w-full z-[-1]">
             <img
@@ -47,7 +47,7 @@ const forgotPass = () => {
               <div className="text-center 2xl:mb-10 mb-5">
                 <h4 className="font-medium mb-4">Forgot Your Password?</h4>
                 <div className="text-slate-500 dark:text-slate-400 text-base">
-                  Reset Password with Dashcode.
+                  Reset Password with Wa-One.
                 </div>
               </div>
               <div className="font-normal text-base text-slate-500 dark:text-slate-400 text-center px-2 bg-slate-100 dark:bg-slate-600 rounded py-3 mb-4 mt-10">
@@ -67,7 +67,7 @@ const forgotPass = () => {
               </div>
             </div>
             <div className="auth-footer text-center">
-              Copyright 2021, Dashcode All Rights Reserved.
+              Copyright 2021, Wa-One All Rights Reserved.
             </div>
           </div>
         </div>

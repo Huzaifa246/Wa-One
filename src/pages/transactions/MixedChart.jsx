@@ -123,7 +123,7 @@ const MixedChart = () => {
         vertical: 0,
       },
       labels: {
-        useSeriesColors: true,
+        useSeriesColors: false,
       },
     },
     title: {
@@ -147,7 +147,6 @@ const MixedChart = () => {
   return (
     <div className="2xl:col-span-6 lg:col-span-7 col-span-12">
       <Card>
-        {/* <h5 class="my-2">Number of Transactions</h5> */}
         <div>
           <Chart options={options} series={series} type="line" height={350} />
         </div>

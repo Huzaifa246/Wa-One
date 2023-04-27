@@ -69,6 +69,13 @@ const COLUMNS = [
     },
   },
   {
+    Header: "Amount",
+    accessor: "amount",
+    Cell: (row) => {
+      return <span>{row?.cell?.value}</span>;
+    },
+  },
+  {
     Header: "status",
     accessor: "status",
     Cell: (row) => {

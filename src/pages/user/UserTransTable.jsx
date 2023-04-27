@@ -82,7 +82,12 @@ const COLUMNS = [
             <span
               className={`progress-bar bg-${row?.cell?.value}`}
               role="progressbar"
-              style={{ width: "auto", color: "white" }}
+              style={{
+                width: "30px",
+                color: "white",
+                borderRadius: "15px",
+                padding: "5px",
+              }}
               aria-valuenow="50"
               aria-valuemin="0"
               aria-valuemax="100"
