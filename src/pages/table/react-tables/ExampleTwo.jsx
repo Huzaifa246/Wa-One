@@ -163,15 +163,12 @@ const ExampleTwo = ({ title = "Transaction" }) => {
           <h4 className="card-title">{title}</h4>
           <div className="flex items-end justify-end">
             <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
-            <div className="col-span-12 md:col-span-6 text-md-end md:text-center">
-              <div className="btn btn-link p-0 date-range-picker-button position-relative d-flex align-items-end justify-content-end">
-                <Calendar onClick={handleCalendarClick} />
+            <div className="relative">
+              <div>
+                <Calendar onClick={handleCalendarClick} height={"30px"} />
               </div>
               {showCalendar && (
-                <div
-                  className="position-absolute w-100 p-1 date-range-picker-overlay"
-                  style={{ zIndex: "9999" }}
-                >
+                <div className="absolute top-12 right-0 z-10">
                   <DateRangePicker
                     ranges={[calState]}
                     onChange={handleDateChange}
