@@ -70,7 +70,7 @@ const COLUMNS = [
       return <span>{row?.cell?.value}</span>;
     },
   },
-  
+
   {
     Header: "status",
     accessor: "status",
