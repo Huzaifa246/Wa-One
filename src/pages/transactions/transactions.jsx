@@ -8,7 +8,7 @@ import Card from "@/components/ui/Card";
 const transactions = () => {
   return (
     <>
-      <h3 class="my-6">Transaction</h3>
+      <h5 class="my-6">Transaction</h5>
       <Card>
         <div class="flex flex-wrap gap-4 justify-between">
           <div class="w-full md:w-1/2 lg:w-[49%] bg-gray-100 p-1">
