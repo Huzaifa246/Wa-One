@@ -80,7 +80,7 @@ const Layout = () => {
             }
           >
             <Suspense fallback={<Loading />}>
-              <Breadcrumbs />
+              {/* <Breadcrumbs /> */}
               {<Outlet />}
             </Suspense>
           </div>

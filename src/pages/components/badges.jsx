@@ -149,12 +149,12 @@ const badges = () => {
               <Badge label="2" className="bg-white text-slate-900 " />
             </div>
           </Button>
-          <Button className="btn-success">
+          {/* <Button className="btn-success">
             <div className="space-x-1 rtl:space-x-reverse">
               <span>Messages</span>
               <Badge label="4" className="bg-white text-slate-900 " />
             </div>
-          </Button>
+          </Button> */}
           <Button className="btn-info">
             <div className="space-x-1 rtl:space-x-reverse">
               <span>Draft</span>

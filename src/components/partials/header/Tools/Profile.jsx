@@ -46,45 +46,10 @@ const Profile = () => {
       },
     },
     {
-      label: "Chat",
-      icon: "heroicons-outline:chat",
-      action: () => {
-        navigate("/chat");
-      },
-    },
-    {
-      label: "Email",
-      icon: "heroicons-outline:mail",
-      action: () => {
-        navigate("/email");
-      },
-    },
-    {
-      label: "Todo",
-      icon: "heroicons-outline:clipboard-check",
-      action: () => {
-        navigate("/todo");
-      },
-    },
-    {
       label: "Settings",
       icon: "heroicons-outline:cog",
       action: () => {
         navigate("/settings");
-      },
-    },
-    {
-      label: "Price",
-      icon: "heroicons-outline:credit-card",
-      action: () => {
-        navigate("/pricing");
-      },
-    },
-    {
-      label: "Faq",
-      icon: "heroicons-outline:information-circle",
-      action: () => {
-        navigate("/faq");
       },
     },
     {
@@ -94,6 +59,41 @@ const Profile = () => {
         dispatch(handleLogout(false));
       },
     },
+    // {
+    //   label: "Chat",
+    //   icon: "heroicons-outline:chat",
+    //   action: () => {
+    //     navigate("/chat");
+    //   },
+    // },
+    // {
+    //   label: "Email",
+    //   icon: "heroicons-outline:mail",
+    //   action: () => {
+    //     navigate("/email");
+    //   },
+    // },
+    // {
+    //   label: "Todo",
+    //   icon: "heroicons-outline:clipboard-check",
+    //   action: () => {
+    //     navigate("/todo");
+    //   },
+    // },
+    // {
+    //   label: "Price",
+    //   icon: "heroicons-outline:credit-card",
+    //   action: () => {
+    //     navigate("/pricing");
+    //   },
+    // },
+    // {
+    //   label: "Faq",
+    //   icon: "heroicons-outline:information-circle",
+    //   action: () => {
+    //     navigate("/faq");
+    //   },
+    // },
   ];
 
   return (

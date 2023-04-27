@@ -11,7 +11,7 @@ import Logo from "./Tools/Logo";
 import SearchModal from "./Tools/SearchModal";
 import Profile from "./Tools/Profile";
 import Notification from "./Tools/Notification";
-import Message from "./Tools/Message";
+// import Message from "./Tools/Message";
 import Language from "./Tools/Language";
 import useRtl from "@/hooks/useRtl";
 import useMobileMenu from "@/hooks/useMobileMenu";
@@ -120,7 +120,7 @@ const Header = ({ className = "custom-class" }) => {
             <Language />
             <SwitchDark />
             <MonoChrome />
-            {width >= breakpoints.md && <Message />}
+            {/* {width >= breakpoints.md && <Message />} */}
             {width >= breakpoints.md && <Notification />}
             {width >= breakpoints.md && <Profile />}
             {width <= breakpoints.md && (
