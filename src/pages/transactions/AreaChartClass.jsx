@@ -80,18 +80,18 @@ const AreaChartClass = () => {
       show: true,
       position: "top",
       horizontalAlign: "right",
-      fontSize: "12px",
+      fontSize: "10px",
       fontFamily: "Inter",
       offsetY: -30,
       markers: {
         width: 8,
         height: 8,
         offsetY: -1,
-        offsetX: -5,
-        radius: 12,
+        offsetX: 0,
+        radius: 5,
       },
       itemMargin: {
-        horizontal: 10,
+        horizontal: 3,
         vertical: 0,
       },
       labels: {
